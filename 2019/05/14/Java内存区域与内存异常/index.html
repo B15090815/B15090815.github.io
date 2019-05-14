@@ -97,20 +97,20 @@
 
 
   <meta name="description" content="2-Java内存区域与内存异常1.运行时内存区  方法区：各线程共享；存储被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码；常量池包含在方法区中（运行时常量池居具有动态性，可以动态加入常量）。 虚拟机栈（栈、局部变量表）：线程私有；方法执行时创建栈帧，每个方法调用执行完成的过程，对应一个栈帧在虚拟机栈中从入栈到出栈的过程。局部变量表所需的空间在编译时完成时分配。 本地方法栈：为虚拟机使">
-<meta name="keywords" content="java内存区域划分">
+<meta name="keywords" content="java内存">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java内存区域与内存异常">
 <meta property="og:url" content="http://yoursite.com/2019/05/14/Java内存区域与内存异常/index.html">
 <meta property="og:site_name" content="CHenrx">
 <meta property="og:description" content="2-Java内存区域与内存异常1.运行时内存区  方法区：各线程共享；存储被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码；常量池包含在方法区中（运行时常量池居具有动态性，可以动态加入常量）。 虚拟机栈（栈、局部变量表）：线程私有；方法执行时创建栈帧，每个方法调用执行完成的过程，对应一个栈帧在虚拟机栈中从入栈到出栈的过程。局部变量表所需的空间在编译时完成时分配。 本地方法栈：为虚拟机使">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="e:/WriteSome/通过句柄访问对象.jpg">
-<meta property="og:image" content="e:/WriteSome/通过直接指针访问对象.jpg">
-<meta property="og:updated_time" content="2019-05-14T03:44:41.716Z">
+<meta property="og:image" content="http://yoursite.com/2019/05/14/Java内存区域与内存异常/E:/WriteSome/通过句柄访问对象.jpg">
+<meta property="og:image" content="http://yoursite.com/2019/05/14/Java内存区域与内存异常/E:/WriteSome/通过直接指针访问对象.jpg">
+<meta property="og:updated_time" content="2019-05-14T03:57:31.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java内存区域与内存异常">
 <meta name="twitter:description" content="2-Java内存区域与内存异常1.运行时内存区  方法区：各线程共享；存储被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码；常量池包含在方法区中（运行时常量池居具有动态性，可以动态加入常量）。 虚拟机栈（栈、局部变量表）：线程私有；方法执行时创建栈帧，每个方法调用执行完成的过程，对应一个栈帧在虚拟机栈中从入栈到出栈的过程。局部变量表所需的空间在编译时完成时分配。 本地方法栈：为虚拟机使">
-<meta name="twitter:image" content="e:/WriteSome/通过句柄访问对象.jpg">
+<meta name="twitter:image" content="http://yoursite.com/2019/05/14/Java内存区域与内存异常/E:/WriteSome/通过句柄访问对象.jpg">
 
 
 
@@ -370,7 +370,7 @@
                 
               
 
-              <time title="创建时间：2019-05-14 11:43:32 / 修改时间：11:44:41" itemprop="dateCreated datePublished" datetime="2019-05-14T11:43:32+08:00">2019-05-14</time>
+              <time title="创建时间：2019-05-14 11:52:49 / 修改时间：11:57:31" itemprop="dateCreated datePublished" datetime="2019-05-14T11:52:49+08:00">2019-05-14</time>
             
 
             
@@ -439,11 +439,11 @@
 <ul>
 <li><p>使用句柄</p>
 <p>Java堆中划分一部分内存为句柄池，引用变量（例如，Object obj；其中obj为引用变量）存储对象的句柄地址。</p>
-<p><img src="E:\WriteSome\通过句柄访问对象.jpg" alt="通过句柄访问对象"></p>
+<p><img src="/2019/05/14/Java内存区域与内存异常/E:/WriteSome/通过句柄访问对象.jpg" alt="通过句柄访问对象"></p>
 </li>
 <li><p>直接指针</p>
 <p>引用变量直接存储对象地址。</p>
-<p><img src="E:\WriteSome\通过直接指针访问对象.jpg" alt="通过直接指针访问对象"></p>
+<p><img src="/2019/05/14/Java内存区域与内存异常/E:/WriteSome/通过直接指针访问对象.jpg" alt="通过直接指针访问对象"></p>
 <p><strong>两种方法对比：</strong>1.引用变量存储稳定的句柄地址，对象被移动只需要改变句柄中实例数据指针，而引用变量本身不需要修改。2.指针访问方式速度快，指针只需要一次定位。</p>
 </li>
 </ul>
@@ -470,7 +470,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/java内存区域划分/" rel="tag"># java内存区域划分</a>
+            <a href="/tags/java内存/" rel="tag"># java内存</a>
           
         </div>
       
