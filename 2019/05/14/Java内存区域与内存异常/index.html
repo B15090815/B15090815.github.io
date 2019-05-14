@@ -96,18 +96,21 @@
 
 
 
-  <meta name="description" content="博客">
-<meta name="keywords" content="博客 程序 编程 学习">
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://yoursite.com/tags/index.html">
+  <meta name="description" content="2-Java内存区域与内存异常1.运行时内存区  方法区：各线程共享；存储被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码；常量池包含在方法区中（运行时常量池居具有动态性，可以动态加入常量）。 虚拟机栈（栈、局部变量表）：线程私有；方法执行时创建栈帧，每个方法调用执行完成的过程，对应一个栈帧在虚拟机栈中从入栈到出栈的过程。局部变量表所需的空间在编译时完成时分配。 本地方法栈：为虚拟机使">
+<meta name="keywords" content="java内存区域划分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Java内存区域与内存异常">
+<meta property="og:url" content="http://yoursite.com/2019/05/14/Java内存区域与内存异常/index.html">
 <meta property="og:site_name" content="CHenrx">
-<meta property="og:description" content="博客">
+<meta property="og:description" content="2-Java内存区域与内存异常1.运行时内存区  方法区：各线程共享；存储被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码；常量池包含在方法区中（运行时常量池居具有动态性，可以动态加入常量）。 虚拟机栈（栈、局部变量表）：线程私有；方法执行时创建栈帧，每个方法调用执行完成的过程，对应一个栈帧在虚拟机栈中从入栈到出栈的过程。局部变量表所需的空间在编译时完成时分配。 本地方法栈：为虚拟机使">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-05-14T02:50:49.096Z">
+<meta property="og:image" content="e:/WriteSome/通过句柄访问对象.jpg">
+<meta property="og:image" content="e:/WriteSome/通过直接指针访问对象.jpg">
+<meta property="og:updated_time" content="2019-05-14T03:44:41.716Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
-<meta name="twitter:description" content="博客">
+<meta name="twitter:title" content="Java内存区域与内存异常">
+<meta name="twitter:description" content="2-Java内存区域与内存异常1.运行时内存区  方法区：各线程共享；存储被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码；常量池包含在方法区中（运行时常量池居具有动态性，可以动态加入常量）。 虚拟机栈（栈、局部变量表）：线程私有；方法执行时创建栈帧，每个方法调用执行完成的过程，对应一个栈帧在虚拟机栈中从入栈到出栈的过程。局部变量表所需的空间在编译时完成时分配。 本地方法栈：为虚拟机使">
+<meta name="twitter:image" content="e:/WriteSome/通过句柄访问对象.jpg">
 
 
 
@@ -115,7 +118,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/tags/">
+  <link rel="canonical" href="http://yoursite.com/2019/05/14/Java内存区域与内存异常/">
 
 
 
@@ -125,7 +128,7 @@
   };
 </script>
 
-  <title>tags | CHenrx</title>
+  <title>Java内存区域与内存异常 | CHenrx</title>
   
 
 
@@ -228,7 +231,7 @@
         
         
           
-          <li class="menu-item menu-item-标签 menu-item-active">
+          <li class="menu-item menu-item-标签">
 
     
     
@@ -304,89 +307,206 @@
           
             
 
-    
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-      
-      
-    
-    
-
-  
-
-
           
           <div id="content" class="content">
             
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/05/14/Java内存区域与内存异常/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="CHenrx">
+      <meta itemprop="description" content="博客">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="CHenrx">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-<h2 class="post-title" itemprop="name headline">tags
-
-</h2>
-
-<div class="post-meta">
-  
-  
-
-
-
-</div>
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
+          <h2 class="post-title" itemprop="name headline">Java内存区域与内存异常
+
               
-              
-                
-                  
-                
-              
-                
-                  
-                
-              
-              目前共计 2 个标签
-            </div>
-            <div class="tag-cloud-tags">
-              
-                <a href="/tags/BeautifulSoup/" style="font-size: 12px; color: #ccc">BeautifulSoup</a> <a href="/tags/java内存区域划分/" style="font-size: 12px; color: #ccc">java内存区域划分</a>
-              
-            </div>
-          </div>
+            
+          </h2>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-05-14 11:43:32 / 修改时间：11:44:41" itemprop="dateCreated datePublished" datetime="2019-05-14T11:43:32+08:00">2019-05-14</time>
+            
+
+            
+              
+
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <h1 id="2-Java内存区域与内存异常"><a href="#2-Java内存区域与内存异常" class="headerlink" title="2-Java内存区域与内存异常"></a>2-Java内存区域与内存异常</h1><p>1.运行时内存区</p>
+<ul>
+<li>方法区：各线程共享；存储被虚拟机加载的类信息、常量、静态变量、即时编译器编译后的代码；常量池包含在方法区中（运行时常量池居具有动态性，可以动态加入常量）。</li>
+<li>虚拟机栈（栈、局部变量表）：线程私有；方法执行时创建栈帧，每个方法调用执行完成的过程，对应一个栈帧在虚拟机栈中从入栈到出栈的过程。局部变量表所需的空间在<strong>编译时</strong>完成时分配。</li>
+<li>本地方法栈：为虚拟机使用到的Native方法服务。</li>
+<li>堆：虚拟机启动时创建；所有线程共享；存放对象实例；不要求物理连续，但逻辑上时连续的。</li>
+<li>程序计数器：线程私有；记录正在执行的虚拟机字节码指令的地址，若正在执行Native方法，计数值为空。</li>
+</ul>
+<p>2.对象当问</p>
+<ul>
+<li><p>使用句柄</p>
+<p>Java堆中划分一部分内存为句柄池，引用变量（例如，Object obj；其中obj为引用变量）存储对象的句柄地址。</p>
+<p><img src="E:\WriteSome\通过句柄访问对象.jpg" alt="通过句柄访问对象"></p>
+</li>
+<li><p>直接指针</p>
+<p>引用变量直接存储对象地址。</p>
+<p><img src="E:\WriteSome\通过直接指针访问对象.jpg" alt="通过直接指针访问对象"></p>
+<p><strong>两种方法对比：</strong>1.引用变量存储稳定的句柄地址，对象被移动只需要改变句柄中实例数据指针，而引用变量本身不需要修改。2.指针访问方式速度快，指针只需要一次定位。</p>
+</li>
+</ul>
+
       
     </div>
-    
-
-
 
     
+
     
     
+    
+
+    
+
+    
+      
+    
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/java内存区域划分/" rel="tag"># java内存区域划分</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/05/14/BeautifulSoup搜索函数/" rel="next" title="BeautifulSoup搜索函数">
+                <i class="fa fa-chevron-left"></i> BeautifulSoup搜索函数
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
   </div>
 
 
@@ -415,8 +535,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -526,6 +655,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Java内存区域与内存异常"><span class="nav-number">1.</span> <span class="nav-text">2-Java内存区域与内存异常</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
