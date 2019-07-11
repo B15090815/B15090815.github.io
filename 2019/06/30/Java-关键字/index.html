@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="volatile  ※ volatile  强制将修改的值立即写入主存 禁止指令重排  ※ transient">
+  <meta name="description" content="volatile  ※ volatile  强制将修改的值立即写入主存 禁止指令重排  ※ transient  被修饰的成员属性变量不被序列化 不需要被序列化的情况： 类中的字段值可以根据其它字段推导出来 具体业务需求吧，哪些字段不想被序列化">
 <meta name="keywords" content="博客 程序 编程 学习">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Java 关键字">
 <meta property="og:url" content="http://yoursite.com/2019/06/30/Java-关键字/index.html">
 <meta property="og:site_name" content="CHenrx">
-<meta property="og:description" content="volatile  ※ volatile  强制将修改的值立即写入主存 禁止指令重排  ※ transient">
+<meta property="og:description" content="volatile  ※ volatile  强制将修改的值立即写入主存 禁止指令重排  ※ transient  被修饰的成员属性变量不被序列化 不需要被序列化的情况： 类中的字段值可以根据其它字段推导出来 具体业务需求吧，哪些字段不想被序列化">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-30T12:06:08.624Z">
+<meta property="og:updated_time" content="2019-06-30T12:23:14.212Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Java 关键字">
-<meta name="twitter:description" content="volatile  ※ volatile  强制将修改的值立即写入主存 禁止指令重排  ※ transient">
+<meta name="twitter:description" content="volatile  ※ volatile  强制将修改的值立即写入主存 禁止指令重排  ※ transient  被修饰的成员属性变量不被序列化 不需要被序列化的情况： 类中的字段值可以根据其它字段推导出来 具体业务需求吧，哪些字段不想被序列化">
 
 
 
@@ -367,7 +367,7 @@
                 
               
 
-              <time title="创建时间：2019-06-30 19:50:35 / 修改时间：20:06:08" itemprop="dateCreated datePublished" datetime="2019-06-30T19:50:35+08:00">2019-06-30</time>
+              <time title="创建时间：2019-06-30 19:50:35 / 修改时间：20:23:14" itemprop="dateCreated datePublished" datetime="2019-06-30T19:50:35+08:00">2019-06-30</time>
             
 
             
@@ -442,6 +442,14 @@
 <li>禁止指令重排</li>
 </ol>
 <p><strong>※ transient</strong></p>
+<ol>
+<li>被修饰的成员属性变量不被序列化</li>
+<li>不需要被序列化的情况：<ul>
+<li>类中的字段值可以根据其它字段推导出来</li>
+<li>具体业务需求吧，哪些字段不想被序列化</li>
+</ul>
+</li>
+</ol>
 
       
     </div>
@@ -481,6 +489,10 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/02/Oracle学习/" rel="prev" title="Oracle创建用户及数据导入">
+                Oracle创建用户及数据导入 <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -540,7 +552,7 @@
                 
                   <a href="/archives">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">4</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -561,7 +573,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
@@ -582,7 +596,9 @@
                     
                       
                     
-                    <span class="site-state-item-count">2</span>
+                      
+                    
+                    <span class="site-state-item-count">3</span>
                     <span class="site-state-item-name">标签</span>
                   </a>
                 </div>
