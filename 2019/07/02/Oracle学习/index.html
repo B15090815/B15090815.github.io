@@ -106,7 +106,7 @@
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://yoursite.com/2019/07/02/Oracle学习/Oracle数值函数.jpg">
 <meta property="og:image" content="http://yoursite.com/2019/07/02/Oracle学习/日期函数.jpg">
-<meta property="og:updated_time" content="2019-07-11T15:13:05.237Z">
+<meta property="og:updated_time" content="2019-07-12T02:51:39.244Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle学习">
 <meta name="twitter:description" content="一、OracleXE自带账户 账户名 System：系统管理员（管理员） Sys：超级用户（一般指工程师）  区别 Sys账户的权限比System多。  注意 OracleXE安装完后，不自带普通用户。   二、新建用户 使用System账号登录进行用户创建 打开plsql，使用System账号登录，注意登录身份选择sysdba。  新建SQL命令窗口 12345678--创建用户	--creat">
@@ -387,7 +387,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-11 23:13:05" itemprop="dateModified" datetime="2019-07-11T23:13:05+08:00">2019-07-11</time>
+                <time title="修改时间：2019-07-12 10:51:39" itemprop="dateModified" datetime="2019-07-12T10:51:39+08:00">2019-07-12</time>
               
             
           </span>
@@ -761,7 +761,10 @@
 <li><p>索引</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--创建索引</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">index</span> 索引名 <span class="keyword">on</span> 表名(字段名);</span><br><span class="line"><span class="comment">--删除索引</span></span><br><span class="line"><span class="keyword">drop</span> 索引名;</span><br></pre></td></tr></table></figure>
 </li>
+<li><p>分页查询</p>
+</li>
 </ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--rownum：对查询结果自动编号，只能做小于判断，不能做大于操作</span></span><br><span class="line"><span class="comment">--取前5条数据</span></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> 表 <span class="keyword">where</span> <span class="keyword">rownum</span> &lt;=<span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> 字段 <span class="keyword">from</span> (<span class="keyword">select</span> <span class="keyword">rownum</span> r,字段 <span class="keyword">from</span> 表 <span class="keyword">where</span> 条件) <span class="keyword">where</span> r&gt;<span class="number">5</span> <span class="keyword">and</span> <span class="keyword">rownum</span> &lt;=<span class="number">10</span>;</span><br></pre></td></tr></table></figure>
 
       
     </div>

@@ -386,7 +386,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-07-11 23:13:05" itemprop="dateModified" datetime="2019-07-11T23:13:05+08:00">2019-07-11</time>
+                <time title="修改时间：2019-07-12 10:51:39" itemprop="dateModified" datetime="2019-07-12T10:51:39+08:00">2019-07-12</time>
               
             
           </span>
@@ -762,7 +762,10 @@
 <li><p>索引</p>
 <figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--创建索引</span></span><br><span class="line"><span class="keyword">create</span> <span class="keyword">index</span> 索引名 <span class="keyword">on</span> 表名(字段名);</span><br><span class="line"><span class="comment">--删除索引</span></span><br><span class="line"><span class="keyword">drop</span> 索引名;</span><br></pre></td></tr></table></figure>
 </li>
+<li><p>分页查询</p>
+</li>
 </ol>
+<figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--rownum：对查询结果自动编号，只能做小于判断，不能做大于操作</span></span><br><span class="line"><span class="comment">--取前5条数据</span></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> 表 <span class="keyword">where</span> <span class="keyword">rownum</span> &lt;=<span class="number">5</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">select</span> 字段 <span class="keyword">from</span> (<span class="keyword">select</span> <span class="keyword">rownum</span> r,字段 <span class="keyword">from</span> 表 <span class="keyword">where</span> 条件) <span class="keyword">where</span> r&gt;<span class="number">5</span> <span class="keyword">and</span> <span class="keyword">rownum</span> &lt;=<span class="number">10</span>;</span><br></pre></td></tr></table></figure>
 
           
         
