@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2019/07/13/JDBC%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2019-07-15T07:57:43.845Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/07/14/Log4j/</loc>
+    
+    <lastmod>2019-07-14T01:31:22.302Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2019/07/13/MySQL%E5%AD%A6%E4%B9%A0/</loc>
+    
+    <lastmod>2019-07-13T02:40:34.231Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2019/07/02/Oracle%E5%AD%A6%E4%B9%A0/</loc>
     
     <lastmod>2019-07-12T02:51:39.244Z</lastmod>

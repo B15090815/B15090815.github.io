@@ -96,18 +96,22 @@
 
 
 
-  <meta name="description" content="volatile  ※ volatile  强制将修改的值立即写入主存 禁止指令重排  ※ transient  被修饰的成员属性变量不被序列化 不需要被序列化的情况： 类中的字段值可以根据其它字段推导出来 具体业务需求吧，哪些字段不想被序列化">
-<meta name="keywords" content="博客 程序 编程 学习">
+  <meta name="description" content="一、MySQL数据类型1.1数值类型 1.2日期类型 1.3字符类型 二、表的修改2.1添加字段1alter table 表名 add 字段名 类型; 2.2删除字段1alter table 表名 drop 字段名; 2.3修改字段类型1alter table 表名 modify 字段名 新类型; 2.4修改字段名1alter table 表名 change 字段名 新字段名 类型; 2.5修改表">
+<meta name="keywords" content="MySQL">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Java 关键字">
-<meta property="og:url" content="http://yoursite.com/2019/06/30/Java-关键字/index.html">
+<meta property="og:title" content="MySQL学习">
+<meta property="og:url" content="http://yoursite.com/2019/07/13/MySQL学习/index.html">
 <meta property="og:site_name" content="CHenrx">
-<meta property="og:description" content="volatile  ※ volatile  强制将修改的值立即写入主存 禁止指令重排  ※ transient  被修饰的成员属性变量不被序列化 不需要被序列化的情况： 类中的字段值可以根据其它字段推导出来 具体业务需求吧，哪些字段不想被序列化">
+<meta property="og:description" content="一、MySQL数据类型1.1数值类型 1.2日期类型 1.3字符类型 二、表的修改2.1添加字段1alter table 表名 add 字段名 类型; 2.2删除字段1alter table 表名 drop 字段名; 2.3修改字段类型1alter table 表名 modify 字段名 新类型; 2.4修改字段名1alter table 表名 change 字段名 新字段名 类型; 2.5修改表">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-06-30T12:23:14.212Z">
+<meta property="og:image" content="http://yoursite.com/2019/07/13/MySQL学习/MySQL数值类型.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/13/MySQL学习/MySQL日期类型.png">
+<meta property="og:image" content="http://yoursite.com/2019/07/13/MySQL学习/MySQL字符串类型.png">
+<meta property="og:updated_time" content="2019-07-13T02:40:34.231Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Java 关键字">
-<meta name="twitter:description" content="volatile  ※ volatile  强制将修改的值立即写入主存 禁止指令重排  ※ transient  被修饰的成员属性变量不被序列化 不需要被序列化的情况： 类中的字段值可以根据其它字段推导出来 具体业务需求吧，哪些字段不想被序列化">
+<meta name="twitter:title" content="MySQL学习">
+<meta name="twitter:description" content="一、MySQL数据类型1.1数值类型 1.2日期类型 1.3字符类型 二、表的修改2.1添加字段1alter table 表名 add 字段名 类型; 2.2删除字段1alter table 表名 drop 字段名; 2.3修改字段类型1alter table 表名 modify 字段名 新类型; 2.4修改字段名1alter table 表名 change 字段名 新字段名 类型; 2.5修改表">
+<meta name="twitter:image" content="http://yoursite.com/2019/07/13/MySQL学习/MySQL数值类型.png">
 
 
 
@@ -115,7 +119,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/06/30/Java-关键字/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/13/MySQL学习/">
 
 
 
@@ -125,7 +129,7 @@
   };
 </script>
 
-  <title>Java 关键字 | CHenrx</title>
+  <title>MySQL学习 | CHenrx</title>
   
 
 
@@ -324,7 +328,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/06/30/Java-关键字/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/13/MySQL学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="CHenrx">
@@ -341,7 +345,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">Java 关键字
+          <h2 class="post-title" itemprop="name headline">MySQL学习
 
               
             
@@ -367,7 +371,7 @@
                 
               
 
-              <time title="创建时间：2019-06-30 19:50:35 / 修改时间：20:23:14" itemprop="dateCreated datePublished" datetime="2019-06-30T19:50:35+08:00">2019-06-30</time>
+              <time title="创建时间：2019-07-13 09:06:46 / 修改时间：10:40:34" itemprop="dateCreated datePublished" datetime="2019-07-13T09:06:46+08:00">2019-07-13</time>
             
 
             
@@ -389,7 +393,7 @@
                 <span class="post-meta-item-text">分类于</span>
               
               
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a></span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing"><a href="/categories/数据库学习/" itemprop="url" rel="index"><span itemprop="name">数据库学习</span></a></span>
 
                 
                 
@@ -404,7 +408,7 @@
 
           
           
-            <span id="/2019/06/30/Java-关键字/" class="leancloud_visitors" data-flag-title="Java 关键字">
+            <span id="/2019/07/13/MySQL学习/" class="leancloud_visitors" data-flag-title="MySQL学习">
               <span class="post-meta-divider">|</span>
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
@@ -435,21 +439,16 @@
       
 
       
-        <p><strong>volatile</strong></p>
-<p> <strong>※ volatile</strong></p>
-<ol>
-<li>强制将修改的值立即写入主存</li>
-<li>禁止指令重排</li>
-</ol>
-<p><strong>※ transient</strong></p>
-<ol>
-<li>被修饰的成员属性变量不被序列化</li>
-<li>不需要被序列化的情况：<ul>
-<li>类中的字段值可以根据其它字段推导出来</li>
-<li>具体业务需求吧，哪些字段不想被序列化</li>
-</ul>
-</li>
-</ol>
+        <h3 id="一、MySQL数据类型"><a href="#一、MySQL数据类型" class="headerlink" title="一、MySQL数据类型"></a>一、MySQL数据类型</h3><h4 id="1-1数值类型"><a href="#1-1数值类型" class="headerlink" title="1.1数值类型"></a>1.1数值类型</h4><p><img src="/2019/07/13/MySQL学习/MySQL数值类型.png" alt="MySQL数值类型"></p>
+<h4 id="1-2日期类型"><a href="#1-2日期类型" class="headerlink" title="1.2日期类型"></a>1.2日期类型</h4><p><img src="/2019/07/13/MySQL学习/MySQL日期类型.png" alt="MySQL日期类型"></p>
+<h4 id="1-3字符类型"><a href="#1-3字符类型" class="headerlink" title="1.3字符类型"></a>1.3字符类型</h4><p><img src="/2019/07/13/MySQL学习/MySQL字符串类型.png" alt="MySQL字符串类型"></p>
+<h3 id="二、表的修改"><a href="#二、表的修改" class="headerlink" title="二、表的修改"></a>二、表的修改</h3><h4 id="2-1添加字段"><a href="#2-1添加字段" class="headerlink" title="2.1添加字段"></a>2.1添加字段</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">add</span> 字段名 类型;</span><br></pre></td></tr></table></figure>
+<h4 id="2-2删除字段"><a href="#2-2删除字段" class="headerlink" title="2.2删除字段"></a>2.2删除字段</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">drop</span> 字段名;</span><br></pre></td></tr></table></figure>
+<h4 id="2-3修改字段类型"><a href="#2-3修改字段类型" class="headerlink" title="2.3修改字段类型"></a>2.3修改字段类型</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">modify</span> 字段名 新类型;</span><br></pre></td></tr></table></figure>
+<h4 id="2-4修改字段名"><a href="#2-4修改字段名" class="headerlink" title="2.4修改字段名"></a>2.4修改字段名</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">change</span> 字段名 新字段名 类型;</span><br></pre></td></tr></table></figure>
+<h4 id="2-5修改表名"><a href="#2-5修改表名" class="headerlink" title="2.5修改表名"></a>2.5修改表名</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> 表名 <span class="keyword">rename</span> <span class="keyword">as</span> 新的表名;</span><br></pre></td></tr></table></figure>
+<h4 id="2-5删除表"><a href="#2-5删除表" class="headerlink" title="2.5删除表"></a>2.5删除表</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">drop</span> <span class="keyword">table</span> 表名;</span><br></pre></td></tr></table></figure>
+<h4 id="2-6分页"><a href="#2-6分页" class="headerlink" title="2.6分页"></a>2.6分页</h4><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">--m表示页面数，n表示每页的数量</span></span><br><span class="line"><span class="keyword">select</span> * <span class="keyword">from</span> 表名 <span class="keyword">limit</span> m*n-n , n;</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -471,6 +470,12 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/MySQL/" rel="tag"># MySQL</a>
+          
+        </div>
+      
 
       
       
@@ -480,8 +485,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/05/14/Java内存区域与内存异常/" rel="next" title="Java内存区域与内存异常">
-                <i class="fa fa-chevron-left"></i> Java内存区域与内存异常
+              <a href="/2019/07/02/Oracle学习/" rel="next" title="Oracle学习">
+                <i class="fa fa-chevron-left"></i> Oracle学习
               </a>
             
           </div>
@@ -490,8 +495,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/07/02/Oracle学习/" rel="prev" title="Oracle学习">
-                Oracle学习 <i class="fa fa-chevron-right"></i>
+              <a href="/2019/07/13/JDBC学习/" rel="prev" title="JDBC学习">
+                JDBC学习 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -536,8 +541,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -657,6 +671,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#一、MySQL数据类型"><span class="nav-number">1.</span> <span class="nav-text">一、MySQL数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-1数值类型"><span class="nav-number">1.1.</span> <span class="nav-text">1.1数值类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-2日期类型"><span class="nav-number">1.2.</span> <span class="nav-text">1.2日期类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#1-3字符类型"><span class="nav-number">1.3.</span> <span class="nav-text">1.3字符类型</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#二、表的修改"><span class="nav-number">2.</span> <span class="nav-text">二、表的修改</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#2-1添加字段"><span class="nav-number">2.1.</span> <span class="nav-text">2.1添加字段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-2删除字段"><span class="nav-number">2.2.</span> <span class="nav-text">2.2删除字段</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-3修改字段类型"><span class="nav-number">2.3.</span> <span class="nav-text">2.3修改字段类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-4修改字段名"><span class="nav-number">2.4.</span> <span class="nav-text">2.4修改字段名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5修改表名"><span class="nav-number">2.5.</span> <span class="nav-text">2.5修改表名</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-5删除表"><span class="nav-number">2.6.</span> <span class="nav-text">2.5删除表</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-6分页"><span class="nav-number">2.7.</span> <span class="nav-text">2.6分页</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
